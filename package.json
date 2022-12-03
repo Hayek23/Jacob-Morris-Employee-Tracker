@@ -1,0 +1,26 @@
+{
+  "name": "jacob-morris-employee-tracker",
+  "version": "1.0.0",
+  "description": "employee tracker",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Hayek23/Jacob-Morris-Employee-Tracker.git"
+  },
+  "author": "Jacob Morris",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Hayek23/Jacob-Morris-Employee-Tracker/issues"
+  },
+  "homepage": "https://github.com/Hayek23/Jacob-Morris-Employee-Tracker#readme",
+  "dependencies": {
+    "console.table": "^0.10.0",
+    "express": "^4.18.2",
+    "inquirer": "^8.2.4",
+    "mysql2": "^2.3.3"
+  }
+}
