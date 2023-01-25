@@ -37,16 +37,19 @@ const promptUser = () =>
             if(choices === 'View all departments'){
                 db.query('select * from department;', function (err, res){
                     console.table(res)
+                    promptUser()
                 })
             }
             if(choices === 'View all roles'){
                 db.query('select * from role;', function (err, res) {
                     console.table(res)
+                    promptUser()
                 });
             }
             if(choices === 'View all employees'){
                 db.query('select * from employee;', function (err, res){
                     console.table(res)
+                    promptUser()
                 });
             }
             if(choices === 'Add department'){
@@ -118,7 +121,6 @@ const promptUser = () =>
             const answerArray = [answers.title, answers.salary, answers.roleDepartment]
 
             let role = answerArray[0]
-            answerArray[0] = title
             answerArray[1] = salary
             answerArray[2] = roleDepartment
 
